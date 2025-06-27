@@ -6,11 +6,11 @@ import { CiSearch } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
+import Images from "../Images";
+import Check from "../../CheckOut.png";
+import { IoClose } from "react-icons/io5";
 
 const Body = () => {
-
-    
-
   return (
     <div className="bg-kala2">
       <Container className={"py-[40px] px-[20px]"}>
@@ -20,7 +20,7 @@ const Body = () => {
               <FiAlignLeft className="text-[20px]" />
             </button>
             <p>Shop by Category</p>
-            <div className="absolute hidden  top-[27px] cursor-pointer text-left font-menu text-[14px] group-hover:block">
+            <div className="absolute hidden  top-[20px] cursor-pointer text-left font-menu text-[14px] group-hover:block">
               <button className="bg-black py-[15px] pl-[20px] pr-[170px] text-white border-2 border-white hover:text-[20px] transition-all duration-400 cursor-pointer">
                 Accesories
               </button>
@@ -37,7 +37,7 @@ const Body = () => {
                 Bags
               </button>
               <button className="bg-black py-[15px] pl-[20px] pr-[170px] text-white border-2 border-white hover:text-[20px] transition-all duration-400 cursor-pointer">
-                Home appliances
+                Appliances
               </button>
             </div>
           </div>
@@ -72,9 +72,39 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <button>
-              <FaShoppingCart />
-            </button>
+
+            <div className="relative group mt-[8px]">
+              <button className="text-[19px] cursor-pointer">
+                <FaShoppingCart />
+              </button>
+
+              <div className="absolute top-[20px] left-[-160px] hidden group-hover:block">
+                <div className="py-[18px] px-[20px] bg-kala2 flex items-center justify-between gap-x-[20px] border-1">
+                  <Images className={"cartPhoto"} src={Check} />
+                  <div className="">
+                    <p className="cartProductName font-bold text-[14px] font-menu">Black Smart Watch</p>
+                    <p className="subTotal font-bold font-menu">$44.00</p>
+                  </div>
+                  <button className="cartClear text-[30px] cursor-pointer"><IoClose /></button>
+                </div>
+
+
+
+                <div className="py-[18px] px-[20px] bg-white border-1">
+                    <p className="font-menu">Subtotal: <span className="subTotal font-bold font-menu">$44.00</span></p>
+                    <div className="flex gap-x-[20px] justify-around mt-[20px]">
+                        <div className="py-[20px] px-[45px] border-2 cursor-pointer">
+                            <p className="font-bold text-[14px] font-menu">View Cart</p>
+                        </div>
+                        <div className="py-[20px] px-[45px] border-1 bg-black text-white cursor-pointer">
+                            <p className="font-bold text-[14px] font-menu mt-[10px]">Checkout</p>
+                        </div>
+                    </div>
+                </div>
+
+
+              </div>
+            </div>
           </div>
         </Flex>
       </Container>
