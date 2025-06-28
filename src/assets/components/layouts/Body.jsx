@@ -9,11 +9,11 @@ import { FaShoppingCart } from "react-icons/fa";
 import Images from "../Images";
 import Check from "../../CheckOut.png";
 import { IoClose } from "react-icons/io5";
-
+import Land from "../../Intro.png"
 const Body = () => {
   return (
     <div className="bg-kala2">
-      <Container className={"py-[40px] px-[20px]"}>
+      <Container className={"pt-[30px] mt-[10px] px-[20px]"}>
         <Flex className={"justify-between"}>
           <div className="flex gap-x-[10px] relative group">
             <button className="category cursor-pointer flex items-center gap-x-[20px] font-menu text-[14px]">
@@ -107,6 +107,12 @@ const Body = () => {
             </div>
           </div>
         </Flex>
+
+        <Images className={"mt-[20px] cursor-pointer"} src={Land}/>
+
+
+
+        
       </Container>
     </div>
   );
