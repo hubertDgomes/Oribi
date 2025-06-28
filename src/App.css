@@ -1,7 +1,10 @@
 @import "tailwindcss";
-
+/* @plugin "daisyui"; */
 
 @theme {
   --font-menu: "DM Sans", "sans-serif"; 
   --color-kala2: #F5F5F3;
+}
+body{
+  background: white;
 }

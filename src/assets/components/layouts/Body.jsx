@@ -20,7 +20,7 @@ const Body = () => {
               <FiAlignLeft className="text-[20px]" />
             </button>
             <p>Shop by Category</p>
-            <div className="absolute hidden  top-[20px] cursor-pointer text-left font-menu text-[14px] group-hover:block">
+            <div className="absolute hidden  top-[20px] cursor-pointer text-left font-menu text-[14px] group-hover:block transition duration-">
               <button className="bg-black py-[15px] pl-[20px] pr-[170px] text-white border-2 border-white hover:text-[20px] transition-all duration-400 cursor-pointer">
                 Accesories
               </button>

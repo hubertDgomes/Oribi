@@ -23,8 +23,6 @@ const Home2 = () => {
         </Flex>
     </Container>
     </div>
-
-    
     </>
 
 
