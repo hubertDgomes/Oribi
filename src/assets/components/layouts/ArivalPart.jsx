@@ -150,7 +150,7 @@ const ArivalPart = () => {
 
         </Flex>
 
-        <Images className={"mt-[200px] cursor-pointer autoAnim2"} src={add2}/>
+        <Images className={"mt-[200px] w-[300px] lg:w-full m-auto cursor-pointer autoAnim2"} src={add2}/>
 
         
       </Container>
