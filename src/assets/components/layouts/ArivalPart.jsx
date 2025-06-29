@@ -23,7 +23,7 @@ const ArivalPart = () => {
                 <Images src={Pro1}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>10%</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <FaCircleLeft className='hidden absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -86,7 +86,7 @@ const ArivalPart = () => {
 
 
         <Flex className={"relative justify-between flex flex-wrap mt-[250px] autoAnim"}>
-            <div className="w-[300px]">
+            <div className="w-[300px] m-auto lg:items-start">
                 <div className="relative">
                 <Images src={Pro5}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>10%</button>
@@ -102,7 +102,7 @@ const ArivalPart = () => {
             
 
 
-            <div className="w-[300px]">
+            <div className="w-[300px] m-auto lg:items-start">
                 <div className="relative">
                 <Images src={Pro6}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -118,12 +118,12 @@ const ArivalPart = () => {
 
 
 
-            <div className="w-[300px]">
+            <div className="w-[300px] m-auto lg:items-start">
                 <div className="relative">
                 <Images src={Pro7}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <FaCircleLeft className='hidden lg:block absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -134,7 +134,7 @@ const ArivalPart = () => {
 
 
 
-            <div className="w-[300px]">
+            <div className="w-[300px] m-auto lg:items-start">
                 <div className="relative">
                 <Images src={Pro8}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
