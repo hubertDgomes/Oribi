@@ -5,7 +5,7 @@ import Home2 from '../layouts/Home2'
 import ArivalPart from '../layouts/ArivalPart'
 
 
-const Home = () => {
+const  Home = () => {
   return (
     <>
     <Body/>

@@ -4,6 +4,7 @@ import Flex from '../Flex'
 import Images from '../Images'
 import Logo from '../../logoOr.png'
 import Menus from '../Menus'
+import { TfiAlignRight } from "react-icons/tfi";
 const Header = () => {
   return (
     <div>
@@ -19,6 +20,8 @@ const Header = () => {
                 <Menus><li>Contacts</li></Menus>
                 <Menus><li>Journal</li></Menus>
             </div>
+
+            <TfiAlignRight className='block sm:hidden cursor-pointer' />
         </Flex>
       </Container>
     </div>
