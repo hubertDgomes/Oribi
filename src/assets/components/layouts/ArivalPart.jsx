@@ -17,7 +17,7 @@ const ArivalPart = () => {
     <div>
       <Container className={"py-[20px]"}>
         <h1 className='text-[40px] font-bold font-menu'>New Arrivals</h1>
-        <Flex className={"relative justify-between gap-x-[40px]"}>
+        <Flex className={"relative justify-between gap-x-[40px] autoAnim"}>
             <div className="">
                 <div className="relative">
                 <Images src={Pro1}/>
@@ -85,7 +85,7 @@ const ArivalPart = () => {
 
 
 
-        <Flex className={"relative justify-between gap-x-[40px] mt-[250px]"}>
+        <Flex className={"relative justify-between gap-x-[40px] mt-[250px] autoAnim"}>
             <div className="">
                 <div className="relative">
                 <Images src={Pro5}/>
@@ -150,7 +150,9 @@ const ArivalPart = () => {
 
         </Flex>
 
-        <Images className={"mt-[200px] cursor-pointer"} src={add2}/>
+        <Images className={"mt-[200px] cursor-pointer autoAnim2"} src={add2}/>
+
+        
       </Container>
     </div>
   )

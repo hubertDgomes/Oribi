@@ -10,7 +10,7 @@ const Home2 = () => {
     <>
     <div
     
-    className="bg-white">
+    className="bg-white autoAnim">
         <Container className={"py-[20px]"}>
         <Flex className={"justify-around"}>
             <div className="w-[580px]">

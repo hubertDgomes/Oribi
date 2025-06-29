@@ -1,3 +1,39 @@
-.drop:hover .logIN{
-    display: block;
+.autoAnim{
+    animation: autoAnim both;
+    animation-timeline: view();
+}
+@keyframes autoAnim {
+    0%{
+        opacity: 0;
+        scale: 0;
+        /* background: #000; */
+        transform: translateY(100px);
+    }
+    50%{
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+.autoAnim2{
+    animation: autoAnim2 both;
+    animation-timeline: view();
+}
+@keyframes autoAnim2 {
+    from{
+        opacity: 0;
+        /* scale: 0; */
+        /* background: #000; */
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateX(0);
+    }
+
 }
