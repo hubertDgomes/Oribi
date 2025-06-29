@@ -6,7 +6,6 @@
     0%{
         opacity: 0;
         scale: 0;
-        /* background: #000; */
         transform: translateY(100px);
     }
     50%{
@@ -24,15 +23,12 @@
     animation-timeline: view();
 }
 @keyframes autoAnim2 {
-    from{
+    0%{
         opacity: 0;
-        /* scale: 0; */
-        /* background: #000; */
         transform: translateX(100px);
     }
-    to{
+    50%{
         opacity: 1;
-        /* scale: 1; */
         transform: translateX(0);
     }
 
