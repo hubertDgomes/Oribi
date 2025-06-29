@@ -108,7 +108,7 @@ const Body = () => {
           </div>
         </Flex>
 
-        <Images className={"mt-[20px] w-[300px] lg:w-full m-auto cursor-pointer"} src={Land}/>
+        <Images className={"mt-[20px] w-[500px] lg:w-full m-auto cursor-pointer"} src={Land}/>
 
 
 
