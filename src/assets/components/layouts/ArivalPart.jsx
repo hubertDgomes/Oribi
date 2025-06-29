@@ -16,9 +16,9 @@ const ArivalPart = () => {
   return (
     <div>
       <Container className={"py-[20px]"}>
-        <h1 className='text-[40px] font-bold font-menu'>New Arrivals</h1>
-        <Flex className={"relative justify-between gap-x-[40px] autoAnim"}>
-            <div className="">
+        <h1 className='lg:text-[40px] font-bold font-menu lg:text-left text-center '>New Arrivals</h1>
+        <Flex className={"relative justify-between flex flex-wrap autoAnim wrap-anywhere"}>
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro1}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>10%</button>
@@ -34,7 +34,7 @@ const ArivalPart = () => {
             
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro2}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -50,7 +50,7 @@ const ArivalPart = () => {
 
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro3}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -66,7 +66,7 @@ const ArivalPart = () => {
 
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro4}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -85,8 +85,8 @@ const ArivalPart = () => {
 
 
 
-        <Flex className={"relative justify-between gap-x-[40px] mt-[250px] autoAnim"}>
-            <div className="">
+        <Flex className={"relative justify-between flex flex-wrap mt-[250px] autoAnim"}>
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro5}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>10%</button>
@@ -102,7 +102,7 @@ const ArivalPart = () => {
             
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro6}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -118,7 +118,7 @@ const ArivalPart = () => {
 
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro7}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
@@ -134,7 +134,7 @@ const ArivalPart = () => {
 
 
 
-            <div className="">
+            <div className="w-[300px]">
                 <div className="relative">
                 <Images src={Pro8}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>

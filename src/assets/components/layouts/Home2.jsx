@@ -13,7 +13,7 @@ const Home2 = () => {
     className="bg-white autoAnim">
         <Container className={"py-[20px]"}>
         <Flex className={"justify-around"}>
-            <div className="w-[580px]">
+            <div className="lg:w-[580px]">
                 <Images src={Add1}/>
             </div>
             <div className="w-[580px]">
