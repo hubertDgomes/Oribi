@@ -1,10 +1,11 @@
 import React from 'react'
 import Images from '../Images'
 import logo from '../../logoOr.png'
+import Container from '../Container'
 const Footer = () => {
   return (
-    <footer class="bg-[#F5F5F3] py-12 px-4 sm:px-6 lg:px-8 font-menu">
-      <div class="max-w-6xl mx-auto">
+    <footer class="bg-[#F5F5F3] py-12 px-3 sm:px-6 lg:px-8 font-menu">
+      <Container>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <Images className={"w-[111px]"} src={logo}/>
@@ -44,7 +45,7 @@ const Footer = () => {
         <div class="mt-16 text-sm text-gray-400 text-right">
           <p>&copy; Copyright 2024 ORIBI, All rights reserved.</p>
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }
