@@ -10,6 +10,10 @@ import Images from "../Images";
 import Check from "../../CheckOut.png";
 import { IoClose } from "react-icons/io5";
 import Land from "../../Intro.png"
+import { motion } from "motion/react"
+
+
+
 const Body = () => {
   return (
     <div className="bg-kala2">
@@ -41,14 +45,35 @@ const Body = () => {
               </button>
             </div>
           </div>
-          <div className="relative m-auto">
-            <input
-              className="bg-white py-[16px] w-[100px] sm:w-[300px] lg:w-[600px] px-[30px] pr-[15px] placeholder:font-menu placeholder:text-[14px]"
-              placeholder="Search Products"
-            />
-            <button className="z-50 absolute right-2 top-5 mr-[16px] cursor-pointer">
-              <CiSearch />
-            </button>
+          <div className="relative m-auto w-full max-w-[600px]">
+            <div className="hidden lg:block relative">
+              <motion.input
+                initial={{ scaleX: 0, originX: 0.5 }}
+                animate={{ scaleX: 1, originX: 0.5 }}
+                transition={{ duration: 2 }}
+                className="bg-white py-[16px] w-[600px] px-[30px] placeholder:font-menu placeholder:text-[14px] origin-center"
+                placeholder="Search Products"
+                style={{ transformOrigin: "center" }}
+              />
+              <motion.button
+                initial={{ x:-100, display: "none" }}
+                animate={{ x:0, display: "block" }}
+                transition={{ duration: 1}}
+                className="z-50 absolute right-2 top-5 mr-[16px] cursor-pointer"
+              >
+                <CiSearch className="text-[20px]" />
+              </motion.button>
+            </div>
+
+            <div className="block lg:hidden">
+              <input
+                className="bg-white py-[16px] w-[100px] sm:w-[300px] px-[30px] pr-[15px] placeholder:font-menu placeholder:text-[14px]"
+                placeholder="Search Products"
+              />
+              <button className="z-50 absolute right-2 top-5 mr-[16px] cursor-pointer">
+                <CiSearch className="text-[20px]" />
+              </button>
+            </div>
           </div>
 
           <div className="relative flex items-center">
@@ -88,20 +113,17 @@ const Body = () => {
                   <button className="cartClear text-[30px] cursor-pointer"><IoClose /></button>
                 </div>
 
-
-
                 <div className="lg:py-[18px] lg:px-[20px] bg-white border-1">
-                    <p className="font-menu">Subtotal: <span className="subTotal font-bold font-menu">$44.00</span></p>
-                    <div className="flex gap-x-[20px] justify-around mt-[20px]">
-                        <div className="lg:py-[20px] lg:px-[45px] border-2 cursor-pointer">
-                            <p className="font-bold text-[14px] font-menu">View Cart</p>
-                        </div>
-                        <div className="lg:py-[20px] lg:px-[45px] border-1 bg-black text-white cursor-pointer">
-                            <p className="font-bold text-[14px] font-menu lg:mt-[10px]">Checkout</p>
-                        </div>
+                  <p className="font-menu">Subtotal: <span className="subTotal font-bold font-menu">$44.00</span></p>
+                  <div className="flex gap-x-[20px] justify-around mt-[20px]">
+                    <div className="lg:py-[20px] lg:px-[45px] border-2 cursor-pointer">
+                      <p className="font-bold text-[14px] font-menu">View Cart</p>
                     </div>
+                    <div className="lg:py-[20px] lg:px-[45px] border-1 bg-black text-white cursor-pointer">
+                      <p className="font-bold text-[14px] font-menu lg:mt-[10px]">Checkout</p>
+                    </div>
+                  </div>
                 </div>
-
 
               </div>
             </div>
@@ -110,9 +132,6 @@ const Body = () => {
 
         <Images className={"mt-[20px] w-[400px] lg:w-full m-auto cursor-pointer"} src={Land}/>
 
-
-
-        
       </Container>
     </div>
   );
