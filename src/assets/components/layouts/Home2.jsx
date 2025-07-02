@@ -5,6 +5,7 @@ import Images from '../Images'
 import Add1 from "../../ad_1.png"
 import Add2 from "../../Ad_2.png"
 import Add3 from "../../Ad_3.png"
+
 const Home2 = () => {
   return (
     <>

@@ -1,0 +1,32 @@
+Instalation of React Router DOM:
+
+1. npm install react-router-dom - Run that in your react project.
+
+2. Make a JSX file where inside the file it contains <Header> <Outlet> <Footer>. This file name should be "RootLayout.jsx"
+
+3. After that, 
+import { BrowserRouter } from 'react-router-dom'
+
+import this in your main.jsx file.(Dont cut or delete any of the import syntax.
+
+4. <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+
+Write that in main.jsx
+
+4. In App.jsx file:-
+
+<Routes>
+    <Route path="/" element={<RootLayout/>}>
+        <Route path="" element={<Home/>}/>
+    </Route>
+</Routes>
+
+This "Routes" is the parent and inside this, the first <Route> has a closing tag. Its because the elment is "RootLayout" which remain fixed everytime and changes pages inside the parent "Route". Thats why inside the parent "Route" it contains multiple Single Route, which give us the path of the pages we want to reload.
+
+5. Here, inside the "path", "/" indicates which is the default page that should be load at first.
+
+6. 

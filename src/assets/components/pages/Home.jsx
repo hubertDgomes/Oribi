@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../layouts/Header'
-import Body from '../layouts/Body'
 import Home2 from '../layouts/Home2'
 import ArivalPart from '../layouts/ArivalPart'
+import Land from '../layouts/Land'
 
 
 const  Home = () => {
   return (
     <>
-    <Body/>
+    <Land/>
     <Home2/>
     <ArivalPart/>
     </>
