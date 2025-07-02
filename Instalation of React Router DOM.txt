@@ -7,7 +7,7 @@ Instalation of React Router DOM:
 3. After that, 
 import { BrowserRouter } from 'react-router-dom'
 
-import this in your main.jsx file.(Dont cut or delete any of the import syntax.
+import this in your main.jsx file.(Dont cut or delete any of the import syntax.)
 
 4. <StrictMode>
     <BrowserRouter>
@@ -18,6 +18,11 @@ import this in your main.jsx file.(Dont cut or delete any of the import syntax.
 Write that in main.jsx
 
 4. In App.jsx file:-
+
+import=>
+import { Routes, Route } from 'react-router-dom'
+
+Then=>
 
 <Routes>
     <Route path="/" element={<RootLayout/>}>
