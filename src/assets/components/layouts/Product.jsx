@@ -3,20 +3,38 @@ import Container from "../Container";
 import Flex from "../Flex";
 import { FaAngleRight } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import Pro2 from '../../pro2.png'
+import Pro2 from "../../pro2.png";
 import { FaCircleLeft } from "react-icons/fa6";
+import Images from "../Images";
+import bata from "../../bata1.png";
 
 const Product = () => {
   return (
     <>
       <Container>
-        <Flex className="justify-between">
-          <div className="py-[40px]">
-            <h1 className="font-bold text-[50px]">Products</h1>
-            <p className="flex items-center pb-[90px]">
-              Home <FaAngleRight /> Product
-            </p>
+        <div className="">
+          <div className="flex justify-between items-center">
+            <div className="mt-[30px]">
+              <h1 className="font-bold text-[50px]">Products</h1>
+              <p className="flex items-center pb-[90px]">
+                Home <FaAngleRight /> Product
+              </p>
+            </div>
 
+            <div className="">
+              <div className="flex items-center">
+                <p className="mr-[10px]">Sort by:</p>
+                <p className="border-1 pr-[90px] pl-[10px] py-[7px] mr-[10px]">
+                  Featured
+                </p>
+                <p className="mr-[10px]">Show</p>
+                <p className="border-1 pr-[90px] pl-[10px] py-[7px]">35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between gap-x-[30px]">
+          <div className="py-[40px]">
             <p className="font-bold text-[20px] mb-[30px]">Shop by Category</p>
 
             <p className="border-b-[1px] w-[300px] text-kala3 border-kala3 text-[16px] py-[10px] mb-[20px]">
@@ -97,18 +115,187 @@ const Product = () => {
             </p>
           </div>
 
-          <div className="flex items-center text-[#767676] text-[16px] mt-[40px]">
-            <p className="mr-[10px]">Sort by:</p>
-            <p className="border-1 pr-[90px] pl-[10px] py-[7px] mr-[10px]">Featured</p>
-            <p className="mr-[10px]">Show</p>
-            <p className="border-1 pr-[90px] pl-[10px] py-[7px]">35</p>
-
-
-            
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
           </div>
-
-          
-        </Flex>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+        </div>
+        </div>
       </Container>
     </>
   );
