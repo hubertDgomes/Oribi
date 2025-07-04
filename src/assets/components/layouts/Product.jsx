@@ -34,7 +34,7 @@ const Product = () => {
           </div>
         </div>
         <div className="flex justify-between gap-x-[30px]">
-          <div className="py-[40px]">
+          <div className="py-[40px] hidden lg:block">
             <p className="font-bold text-[20px] mb-[30px]">Shop by Category</p>
 
             <p className="border-b-[1px] w-[300px] text-kala3 border-kala3 text-[16px] py-[10px] mb-[20px]">
@@ -115,13 +115,13 @@ const Product = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[90px]">
             <div className="w-[300px] m-auto lg:items-start">
                 <div className="relative">
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -135,22 +135,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
-                <Flex className={"justify-between"}>
-                    <p className='py-[20px] font-bold text-[20px] font-menu'>
-                    Basic Crew Neck Tee
-                </p>
-                <p className='text-[16px] font-menu'>$44.00</p>
-                </Flex>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
-            <div className="w-[300px] m-auto lg:items-start">
-                <div className="relative">
-                <Images src={bata}/>
-                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
-                </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -180,7 +165,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -195,7 +180,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -210,7 +195,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -225,7 +210,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -240,7 +225,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -255,7 +240,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -270,7 +255,7 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
@@ -285,7 +270,22 @@ const Product = () => {
                 <Images src={bata}/>
                 <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
                 </div>
-                <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' /> 
+                {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
+                <Flex className={"justify-between"}>
+                    <p className='py-[20px] font-bold text-[20px] font-menu'>
+                    Basic Crew Neck Tee
+                </p>
+                <p className='text-[16px] font-menu'>$44.00</p>
+                </Flex>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-x-[70px] gap-y-[50px]">
+            <div className="w-[300px] m-auto lg:items-start">
+                <div className="relative">
+                <Images src={bata}/>
+                <button className='py-[12px] px-[38px] bg-black text-white font-menu absolute top-[6%] left-[20px] hidden lg:block'>New</button>
+                </div>
+                  {/* <FaCircleLeft className='absolute top-[50%] left-[20px] text-[50px] text-black opacity-35 cursor-pointer' />  */}
                 <Flex className={"justify-between"}>
                     <p className='py-[20px] font-bold text-[20px] font-menu'>
                     Basic Crew Neck Tee
