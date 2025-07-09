@@ -4,6 +4,8 @@ import Home2 from '../layouts/Home2'
 import ArivalPart from '../layouts/ArivalPart'
 import Land from '../layouts/Land'
 import { motion, useScroll } from "motion/react"
+import BestSell from '../layouts/BestSell'
+import SpecialOffer from '../layouts/SpecialOffer'
 
 const  Home = () => {
 
@@ -20,6 +22,8 @@ const  Home = () => {
     <Land/>
     <Home2/>
     <ArivalPart/>
+    <BestSell/>
+    <SpecialOffer/>
     </>
   )
 }

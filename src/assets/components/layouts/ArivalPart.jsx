@@ -22,6 +22,7 @@ const ArivalPart = () => {
   return (
     <div>
       <Container className={"py-[20px]"}>
+        <p className="font-menu font-bold text-[40px] mb-[50px]">New Arrivals</p>
         <Slider {...settings}>
           <div>
             <Products
