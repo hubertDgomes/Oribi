@@ -5,10 +5,13 @@ import { FaHeart } from "react-icons/fa";
 import { FaSyncAlt } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import Flex from '../Flex';
+import { Link } from 'react-router-dom';
 const Products = ({badgeValue,productName,productPrice,src}) => {
   return (
     <div className="relative w-[330px] group">
+        <Link to={"/preview"}>
         <Images src={src}/>
+        </Link>
         <div className="py-[10px] px-[30px] bg-black text-white w-[100px] text-center absolute top-4 left-4">{badgeValue}</div>
         <div className="w-full py-[30px] px-[25px] bg-white absolute bottom-[74px] opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 ease-in-out cursor-pointer">
             <Flex className={"gap-x-[10px] justify-end"}>
