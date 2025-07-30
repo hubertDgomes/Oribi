@@ -6,9 +6,9 @@ import { FaSyncAlt } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import Flex from '../Flex';
 import { Link } from 'react-router-dom';
-const Products = ({badgeValue,productName,productPrice,src}) => {
+const Products = ({badgeValue,productName,productPrice,src,className}) => {
   return (
-    <div className="relative w-[330px] group">
+    <div className={`relative w-[330px] group ${className}`}>
         <Link to={"/preview"}>
         <Images src={src}/>
         </Link>

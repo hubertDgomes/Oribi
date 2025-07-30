@@ -19,8 +19,6 @@ const ArivalPart = () => {
     async function all(){
       let data = await axios.get("https://dummyjson.com/products")
       setMyPro(data.data.products)
-      console.log(data.data.products);
-      
     }
     all()
   }, [])
@@ -28,7 +26,7 @@ const ArivalPart = () => {
 
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -40,12 +38,13 @@ const ArivalPart = () => {
         <p className="font-menu font-bold text-[40px] mb-[50px]">New Arrivals</p>
         <Slider {...settings}>
           {myPro.map((item)=>(  
-            <div>
+            <div key={item.id} className="px-3">
             <Products
               badgeValue={"10%"}
               productName={item.title}
               productPrice={item.price}
               src={item.thumbnail}
+              className={"px-[20px] shadow-lg"}
             />
           </div>
           ))}
