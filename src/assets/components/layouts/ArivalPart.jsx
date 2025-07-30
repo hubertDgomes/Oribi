@@ -40,7 +40,7 @@ const ArivalPart = () => {
           {myPro.map((item)=>(  
             <div key={item.id} className="px-3">
             <Products
-              badgeValue={"10%"}
+              badgeValue={`${item.discountPercentage}%`}
               productName={item.title}
               productPrice={item.price}
               src={item.thumbnail}
