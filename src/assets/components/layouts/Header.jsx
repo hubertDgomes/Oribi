@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 import Images from "../Images";
@@ -14,8 +14,16 @@ import { FaShoppingCart } from "react-icons/fa";
 import Check from "../../CheckOut.png";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { h1 } from "motion/react-client";
 
 const Header = () => {
+
+  const [show, setShow] = useState(false)
+
+  const showSome = ()=>{
+    setShow(!show)
+  }
+
   return (
     <>
     <div>
@@ -123,7 +131,7 @@ const Header = () => {
             </Menus>
           </div>
 
-          <motion.div
+          <motion.button
             animate={{
               rotate: 360,
             }}
@@ -131,9 +139,17 @@ const Header = () => {
               duration: 1,
             }}
             className=""
+            onClick={showSome}
           >
             <TfiAlignRight className="block sm:hidden cursor-pointer" />
-          </motion.div>
+
+            {show && 
+             <div className="absolute right-0 sm:hidden">
+              <h1>More Option</h1>
+             </div>
+            }
+
+          </motion.button>
         </Flex>
       </Container>
 
